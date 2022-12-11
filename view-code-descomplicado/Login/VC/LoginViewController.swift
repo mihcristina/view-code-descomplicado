@@ -18,7 +18,27 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.screen?.delegate(delegate: self)
+        self.screen?.configTextFieldDelegate(delegate: self)
+    }
 
+}
+
+extension LoginViewController: UITextFieldDelegate {
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+}
+
+extension LoginViewController: LoginScreenProtocol {
+
+    func actionLoginButton() {
+
+    }
+
+    func actionRegisterButton() {
+        
     }
 
 }
