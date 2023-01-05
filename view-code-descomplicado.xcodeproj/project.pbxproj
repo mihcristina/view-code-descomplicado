@@ -16,6 +16,8 @@
 		68A2CB89293EC8DE00CF80AE /* view_code_descomplicadoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2CB88293EC8DE00CF80AE /* view_code_descomplicadoUITests.swift */; };
 		68A2CB8B293EC8DE00CF80AE /* view_code_descomplicadoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2CB8A293EC8DE00CF80AE /* view_code_descomplicadoUITestsLaunchTests.swift */; };
 		68A2CB9B293ECA9200CF80AE /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2CB9A293ECA9200CF80AE /* LoginScreen.swift */; };
+		68A2CBA22946733700CF80AE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2CBA12946733700CF80AE /* RegisterViewController.swift */; };
+		68A2CBA42946743500CF80AE /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2CBA32946743500CF80AE /* RegisterScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		68A2CB88293EC8DE00CF80AE /* view_code_descomplicadoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view_code_descomplicadoUITests.swift; sourceTree = "<group>"; };
 		68A2CB8A293EC8DE00CF80AE /* view_code_descomplicadoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view_code_descomplicadoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		68A2CB9A293ECA9200CF80AE /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		68A2CBA12946733700CF80AE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		68A2CBA32946743500CF80AE /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		68A2CB66293EC8DC00CF80AE /* view-code-descomplicado */ = {
 			isa = PBXGroup;
 			children = (
+				68A2CB9E29465F1000CF80AE /* Register */,
 				68A2CB97293ECA6D00CF80AE /* Login */,
 				68A2CB67293EC8DC00CF80AE /* AppDelegate.swift */,
 				68A2CB69293EC8DC00CF80AE /* SceneDelegate.swift */,
@@ -130,17 +135,17 @@
 			isa = PBXGroup;
 			children = (
 				68A2CB9D293ECAC000CF80AE /* Screen */,
-				68A2CB9C293ECABA00CF80AE /* VC */,
+				68A2CB9C293ECABA00CF80AE /* ViewController */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		68A2CB9C293ECABA00CF80AE /* VC */ = {
+		68A2CB9C293ECABA00CF80AE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				68A2CB6B293EC8DC00CF80AE /* LoginViewController.swift */,
 			);
-			path = VC;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		68A2CB9D293ECAC000CF80AE /* Screen */ = {
@@ -149,6 +154,31 @@
 				68A2CB9A293ECA9200CF80AE /* LoginScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		68A2CB9E29465F1000CF80AE /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				68A2CB9F29465F1700CF80AE /* Screen */,
+				68A2CBA029465F2200CF80AE /* ViewController */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		68A2CB9F29465F1700CF80AE /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				68A2CBA32946743500CF80AE /* RegisterScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		68A2CBA029465F2200CF80AE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				68A2CBA12946733700CF80AE /* RegisterViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +311,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A2CBA42946743500CF80AE /* RegisterScreen.swift in Sources */,
 				68A2CB6C293EC8DC00CF80AE /* LoginViewController.swift in Sources */,
+				68A2CBA22946733700CF80AE /* RegisterViewController.swift in Sources */,
 				68A2CB9B293ECA9200CF80AE /* LoginScreen.swift in Sources */,
 				68A2CB68293EC8DC00CF80AE /* AppDelegate.swift in Sources */,
 				68A2CB6A293EC8DC00CF80AE /* SceneDelegate.swift in Sources */,

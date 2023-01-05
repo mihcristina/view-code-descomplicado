@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         self.screen?.delegate(delegate: self)
         self.screen?.configTextFieldDelegate(delegate: self)
+        navigationItem.title = String()
     }
 
 }
@@ -38,6 +39,8 @@ extension LoginViewController: LoginScreenProtocol {
     }
 
     func actionRegisterButton() {
+        let vc: RegisterViewController = RegisterViewController()
+        navigationController?.pushViewController(vc, animated: true)
         
     }
 

@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        setUpNavigation()
         return true
     }
 
@@ -34,3 +34,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    func setUpNavigation() {
+        guard let backButtonImage = UIImage(named: "back")?.withRenderingMode(.alwaysOriginal) else {
+            return
+        }
+
+        let barAppearance = UINavigationBar.appearance()
+        barAppearance.backIndicatorImage = backButtonImage
+        barAppearance.backIndicatorTransitionMaskImage = backButtonImage
+
+    }
+}
